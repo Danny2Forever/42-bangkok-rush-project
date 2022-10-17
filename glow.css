@@ -1,0 +1,25 @@
+#glow-head {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ea00ff, 0 0 20px #df98ff, 0 0 25px #d373ff, 0 0 30px #a63dec, 0 0 35px #a239f8;
+    }
+    to {
+      text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 15px #df7ee0, 0 0 20px #9e309e, 0 0 25px #a63caf, 0 0 30px #dd69dd, 0 0 35px #f47bff, 0 0 40px #d54bff;
+    }
+}
+
+#glow {
+  text-shadow: 0.5px 0.5px 10px rgb(143, 142, 255) ,-0.5px -0.5px 0.50px rgb(255, 208, 138);
+}
+
+#about-section-glow {
+  text-shadow: 0.5px 0.5px 2px rgb(48, 48, 48)
+}

@@ -1,0 +1,188 @@
+@media only screen and (max-width: 1400px) {
+    .about-content img {
+        text-align: center;
+    }
+   .certificate-section-container img{
+        height: 200px;
+   }
+}
+
+@media only screen and (max-width: 1300px) {
+    /* .right-content, .article-information {
+        display: block;
+    } */
+
+    .profile-image{
+        padding-left: 15px;
+    }
+    .about-content img {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .skill-content{
+        padding-top: 220px;
+    }
+
+   .certificate-section-container img{
+        height: 150px;
+   }
+
+   .file {
+        display: none;
+    }
+    
+    .content {
+        margin-top: 330px;
+        width: 1000px;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-content {
+        display: block;
+        justify-items: center;
+
+    }
+
+    .SKILL{
+        padding-top: 80px;
+    }
+
+    .section-about-container{
+        background-color: rgba(12, 4, 17, 0.5);
+    
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .my-work-section {
+        margin: 0 auto;
+        display: block;
+        justify-content: center;
+        max-width: 1100px;
+    }
+    .my-work-section section{  
+        padding-top: 20px;
+        width: 350px;
+        justify-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        
+    }   
+    .right-content {
+        padding-left: 50px;
+    
+    }
+    .right-information {
+        padding-left: 0px;
+        height: 80px;
+    }
+
+    .skill-content{
+        padding-top: 170px;
+    }
+
+
+   
+   #slideshow {
+    overflow: hidden;
+    height: 200px;
+    width: 350px;
+    margin: 0 auto;
+}
+ 
+.slide {
+    float: left;
+    height: 200px;
+    width: 350px;
+}
+ 
+.slide-wrapper {
+    width: calc(350px * 4);
+    animation: slide 30s ease infinite;
+}
+
+.slide:nth-child(1) {
+    background: url('image/discord-bot-new.png');
+}
+ 
+.slide:nth-child(2) {
+    background: url('image/chinese-game.png');
+}
+ 
+.slide:nth-child(3) {
+    background: url('image/calculator.png');
+}
+/*  
+.slide:nth-child(4) {
+    background: url('image/calculator.png');
+} */
+ 
+@keyframes slide {
+    20% {
+        margin-left: calc(-350px * 0);
+    }
+    40% {
+        margin-left: calc(-350px * 1);
+    }
+    60% {
+        margin-left: calc(-350px * 2);
+    }
+    /* 80% {
+        margin-left: calc(-700px * 3);
+    } */
+    }
+
+    .left-col, .mid-col{
+        padding-right: 60px;
+    }
+
+    .nd-line {
+        padding-top: 60px;
+    }
+
+
+
+    .article-information section{
+        width: 700px;
+        font-size: 15px;
+        margin: 0 auto;
+
+    }
+
+    .right-content h1{
+        font-size: 15px;
+    }
+
+    .right-content{
+        width: 680px;
+        margin-top: -60px;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .content{
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+    }
+
+    .right-content{
+        padding-right: 500px;
+    }
+
+    .article-information{
+        width: 100px;
+    }
+    
+}

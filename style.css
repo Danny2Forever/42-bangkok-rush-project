@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=JetBrains Mono');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body header{
+    z-index: 100000;
+    position: fixed;
+    width: 100vw;
+    left: 0px;
+    top: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* background-color: rgb(17, 17, 17,0.6);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+header nav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+header nav ul li {
+    font-family: 'Silkscreen', cursive;
+    display: inline-block;
+    padding: 5px;
+    height: 15px;
+    margin-right: 10px;
+    top: 18px;
+    list-style: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+
+}
+
+.skill-image-list{
+    text-align: center;
+}
+
+.skill-image-list ul li{
+    display: inline-block;
+    padding-left: 30px;
+}
+
+
+header nav ul li .nav-home {
+    color: rgb(190, 0, 228);
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.top-background{
+    background:url("background/BGbackwithSun.png") no-repeat;
+    background-position: center;
+    background-size: 1920px 1080px;
+    margin-top: 0px;
+    display: flexbox;
+    height: 100%;
+    background-attachment: fixed;
+    transition: all 0.3 ease-in-out;
+}
+
+.spike {
+    background:url("background/Spike.png")no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flexbox;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.spike.spike-up {
+    background-attachment: scroll;
+    padding-top: 150px;
+    transition: 0.3s;
+}
+
+.spike.spike-down {
+    background-attachment: scroll;
+    padding-top: 0px;
+    transition: 0.3s;
+}
+
+.top-background.background-up{
+    background-size: 2301px 1300px;
+    transition: 0.3s;
+}
+
+.top-background.background-down{
+    background-size: 1920px 1080px;
+    transition: 0.3s;
+}
+
+/* 
+.top-background ::before{
+    z-index: 1;
+    opacity: 0.6;
+    background-color: rgb(48, 8, 39);
+} */
+
+.top-background .top-content {
+    margin: 0;
+    padding: 0;
+}
+
+header.sticky-down{
+    position: fixed;
+    width: 100vw;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(17, 17, 17, 0.6);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
+}
+
+header.sticky-up{
+    position: fixed;
+    width: 100vw;
+    left: 0px;
+    top: 0px;
+    transition: 0.5s;
+}
+    
+.top-section{
+    font-family: 'Silkscreen', cursive;
+    color: white;
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.top-section .welcome {
+    padding-top: 300px;
+    font-size: 65px;
+}
+
+.section-about{
+    font-family: 'JetBrains Mono';
+    font-size: 22px;
+    background: url("background/FilmgrainExtra.png");
+    height: 800px;
+    color: white;
+}
+
+.get-dark-background{
+    background-color: rgba(12, 4, 17, 0.5);
+    height: 500px;
+}
+
+.section-about-container{
+    height: 1080px;
+    background-color: rgba(12, 4, 17, 0.5);
+
+}
+
+.section-about .section-about-container .ABOUTME {
+    font-size: 50px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.section-about-content {
+    margin: 0 auto;
+    max-width: 1300px;
+    /* border: 1px solid red; */
+    
+}
+
+.about-section{
+    color: rgb(0, 255, 255);
+}
+
+.about-content{
+    flex-wrap: wrap;
+    display: inline-flex;
+
+}
+
+.right-content {
+    padding-left: 50px;
+    display: flex;
+
+}
+
+.right-content h1{
+    display: flex;
+    font-size: 20px
+    /* flex:10; */
+}
+.information{
+    height: 80px;
+    /* border: 1px solid red; */
+}
+
+.right-information{
+    padding-left: 30px;
+    height: 80px;
+    /* border: 1px solid red; */
+
+}
+
+.right-information h1 {
+    padding-bottom: 20px;
+}
+
+.profile-image, .information{
+    display:inline;
+}
+.profile-image img{
+    height: 290px;
+    border-radius: 25px;
+}
+
+.information h1 {
+    padding-bottom: 20px;
+}
+
+.section-about-content .information{
+    margin-left: 50px;
+}
+
+dd {
+    margin-left: 30px;
+}
+
+.article-information {
+    /* border: 1px solid red; */
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.continue-txt{
+    line-height: 0.9;
+}
+
+.article-information section {
+    font-size: 20px;
+    line-height: 0.9;
+}
+
+.section-article section{
+    display: flex;
+}
+
+.head-about {
+    padding-top: 50px;
+}
+
+.top-section{
+  animation: glitch 1s linear infinite;
+}
+
+.SKILL {
+    padding-top: 180px;
+    font-family: 'JetBrains Mono';
+    color: white;
+    font-size: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.skill-background{
+    background: url(background/FlimGrain.png);
+    height: 500px;
+}
+
+.skill-content label{
+    color: white;
+    font-size: 20px;
+    font-family: 'JetBrains Mono';
+}
+
+.power-tube progress{
+    line-height: 3;
+}
+
+.section-skill{
+    margin: 0 auto;
+    max-width: 1300px;
+    /* border: 1px solid red; */
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+  
+.skill-content{
+    display: flex;
+    justify-content: center;
+}
+
+.language-skill{
+    line-height: 2;
+}
+
+.power-tube{
+    margin-left: 60px;
+    line-height: 2.5;
+}
+
+.skill-percent{
+    margin-left: 60px;
+    line-height: 2;
+}
+
+progress {
+    accent-color:rgb(0, 255, 255);
+    
+}
+
+.file {
+    width: 800px;
+}
+
+
+.my-work{
+    background-color: #111;
+    height: 700px;
+}
+
+.my-work .MYWORK{
+    font-size: 50px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+.top-section:before,
+.top-section:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.top-section:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+.top-section:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+
+#slideshow {
+    overflow: hidden;
+    height: 300px;
+    width: 700px;
+    margin: 0 auto;
+}
+ 
+.slide {
+    float: left;
+    height: 300px;
+    width: 700px;
+}
+ 
+.slide-wrapper {
+    width: calc(700px * 4);
+    animation: slide 30s ease infinite;
+}
+
+.slide:nth-child(1) {
+    background: url('image/discord-bot-new.png');
+}
+ 
+.slide:nth-child(2) {
+    background: url('image/chinese-game.png');
+}
+ 
+.slide:nth-child(3) {
+    background: url('image/calculator.png');
+}
+/*  
+.slide:nth-child(4) {
+    background: url('image/calculator.png');
+} */
+ 
+@keyframes slide {
+    20% {
+        margin-left: calc(-700px * 0);
+    }
+    40% {
+        margin-left: calc(-700px * 1);
+    }
+    60% {
+        margin-left: calc(-700px * 2);
+    }
+    /* 80% {
+        margin-left: calc(-700px * 3);
+    } */
+}
+
+.my-work-section {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+}
+
+.my-work-content{
+    /* border: 1px solid red; */
+    margin-left: 30px;
+}
+
+.certificate-section{
+    font-family: 'JetBrains Mono';
+    background-color: rgba(12, 4, 17, 0.5);
+    height: 1000px;
+}
+
+.get-black-opacity-backgorund {
+    z-index: 100000;
+    background: url("background/FilmgrainExtra.png");
+    height: 1000px;
+}
+
+.CERTIFICATE{
+    font-size: 50px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+}
+
+
+.certificate-container{
+    max-width: 354px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+.certificate-container img {
+    max-height: 250px;
+}
+
+.certificate-section-container {
+    justify-content: center;
+    display: flex;
+}
+
+.left-col, .mid-col{
+    padding-right: 120px;
+}
+
+.nd-line {
+    padding-top: 120px;
+}
+
+.grid-filmgrain {
+    background: url("background/Grid-and-Filmgrain.png");
+    height: 1080px;
+}
+
+.grid-filmgrain .get-dark{
+    background-color: rgba(12, 4, 17, 0.52);
+    height: 1080px;
+}
+
+.zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+  }
+  
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+.get-dark img {
+    padding-top: 230px;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.marquee {
+    /* border: 1px solid red; */
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+}
+  
+.marquee-under {
+    /* border: 1px solid red; */
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+}
+
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+}
+  
+.track-under {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee-under 32s linear infinite;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+@keyframes marquee-under {
+    from { transform: translateX(-50%); }
+    to { transform: translateX(0); }
+}
+
+.marquee-content{
+    font-family: 'JetBrains Mono';
+    font-weight: 1000;
+    font-size: 144px;
+    color: white;
+}
+
+.marquee-background{
+    background: url('background/FlimGrain.png');
+}
+
+.get-dark-for-marquee{
+    background-color: rgba(12, 4, 17, 0.52);
+}
+
+
+.contact-section{
+    background-color: #111;
+    height: 550px;
+}
+
+.CONTACTME {
+    font-family: 'JetBrains Mono';
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+}
+.contact-content{
+    /* border: 1px solid red; */
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.contact-background{
+    background: url('background/FlimGrain.png');;
+    height: 650px;
+}
+
+.CONTACT{
+    background-color: rgba(12, 4, 17, 0.52);
+    height: 650px;
+}
+
+/* input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #eee;
+  }
+  
+  .no-outline:focus {
+    outline: none;
+  } */
+
+.my-contact {
+    font-family: 'JetBrains Mono';
+    color: white;
+    margin: 0 auto;
+}
+
+section.CONTACTS h1{
+    padding-bottom: 30px;
+}
+
+.CONTACTS h1 a{
+    text-decoration: none;
+}
